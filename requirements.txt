@@ -1,0 +1,13 @@
+# --- ALOHA2COP Dependencies ---
+# Project: MANIFESTS-Genius (DG-ECHO Grant 101140390)
+
+# KML Processing
+fastkml==1.0
+lxml==5.1.0
+
+# Spatial Data & Geometries
+shapely==2.0.2
+
+# Database Connectivity (PostgreSQL)
+psycopg2-binary==2.9.9
+
