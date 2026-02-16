@@ -160,10 +160,7 @@ def main(file):
 
 
 if __name__ == "__main__":
-    # main('../datos/aloha/E20171123VILAGARCIA_LEL.kml')
-
-    #main('../datos/aloha/1tmAmoniaco.kml')
-    main('../datos/aloha/E20171123VILAGARCIA_PAC.kml')
+    main('../../data/samples/aloha2cop_sample.kml')
 
 
 
