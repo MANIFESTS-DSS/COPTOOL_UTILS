@@ -1,0 +1,16 @@
+{
+	"file_in": "../../data/samples/aloha2cop_sample.kml",
+	"campaign": {
+		"name": "SAMPLE",
+		"description": "SAMPLE OF ALOHA2COP"
+	},
+	"model": "ALOHA",
+	"simulation": {
+		"name": "SIMULATION",
+		"description": "Description of the simulation"
+	},
+	"initial date": "2025-10-29 00:00:00"
+}
+
+	
+	
