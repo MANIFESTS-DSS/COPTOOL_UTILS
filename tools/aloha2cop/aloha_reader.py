@@ -122,13 +122,6 @@ class Aloha:
 
         print(f'\nTotal threat zones found: {len(self.threat_zones)}')
 
-    def get_features(self):
-        """Método legacy - ya no necesario"""
-        return []
-
-    def parse_threat_zones(self, features):
-        """Método legacy - ya no necesario"""
-        pass
 
     def set_loc_type(self):
         if not self.threat_zones:
@@ -151,21 +144,19 @@ class Aloha:
 
 
 def main(file):
-
     aloha = Aloha(file)
     print(f'Reading {aloha.kml_file}')
-    aloha.parse_threat_zones(aloha.get_features())
+
+    # Esta es la línea que debes borrar:
+    # aloha.parse_threat_zones(aloha.get_features())
+
     for threat_zone in aloha.threat_zones:
-        print(f'NAME: The name of the threat zone is {threat_zone.name}')
-        print(f'     DESCRIPTION: \n     {threat_zone.description}')
-        print(f'     LEVEL:     {threat_zone.level}\n\n')
+        print(f'NAME: {threat_zone.name}')
+        print(f'LEVEL: {threat_zone.level}\n')
 
     aloha.set_loc_type()
     aloha.set_category()
-    print(aloha.level_type, aloha.category)
-
-
-
+    print(aloha.loc_type, aloha.category)
 
 
 if __name__ == "__main__":
