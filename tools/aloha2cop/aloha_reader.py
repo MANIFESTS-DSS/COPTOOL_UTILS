@@ -1,22 +1,42 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-**aloha_reader.py**
+aloha_reader: Read Aloha kml.
 
-@Purpose: Class to read aloha kml
+Technical Description:
+    This program acts as an ETL bridge between NOAA's ALOHA (Areal Locations
+    of Hazardous Atmospheres) model and the COP (Common Operational Picture)
+    database. It parses output data from ALOHA's KML files and ingests them
+    directly into the COP system to enhance real-time situational awareness.
 
-@version: 0.0
+-------------------------------------------------------------------------------
+ACKNOWLEDGMENT
+-------------------------------------------------------------------------------
+The work described in this report was supported by the Directorate-General for
+European Civil Protection and Humanitarian Aid Operations (DG-ECHO) of the
+European Union through the Grant Agreement number 101140390 - MANIFESTS
+Genius – UCPM-2023-KAPP corresponding to the Call objective “Knowledge for
+Action in Prevention and Preparedness”.
 
-@python version: 3.9
-@author: Pedro Montero
-@license: INTECMAR
-@requires: fastkml
+-------------------------------------------------------------------------------
+DISCLAIMER
+-------------------------------------------------------------------------------
 
-@date 2022/09/30
+The content of this document represents the views of the author only and is
+his/her sole responsibility; it cannot be considered to reflect the views of
+the European Commission and/or the Directorate-General for European Civil
+Protection and Humanitarian Aid Operations (DG-ECHO) or any other body of the
+European Union. The European Commission and the DG-ECHO is not responsible
+for any use that may be made of the information it contains.
+-------------------------------------------------------------------------------
 
-@history:
+Partners:
+    Developed in cooperation with INTECMAR and IST.
+    Coordinated by Cedre.
 
-
+Author: Pedro Montero / INTECMAR
+Version: 1.0.0
+Date: 2026-02-16
 """
 
 from fastkml import kml

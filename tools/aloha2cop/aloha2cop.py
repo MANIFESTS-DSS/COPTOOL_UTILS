@@ -35,7 +35,7 @@ Partners:
     Coordinated by Cedre.
 
 Author: Pedro Montero / INTECMAR
-Version: 1.0.0
+Version: 1.1.0
 Date: 2026-02-16
 """
 from datetime import datetime
