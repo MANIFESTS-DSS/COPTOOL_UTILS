@@ -1,17 +1,17 @@
 ## COPTool_Utils: ALOHA2COP & MOHID2COP
 
-**COPTool_Utils** is a suite of ETL (Extract, Transform, Load) tools designed to bridge the gap between hazard modeling and operational decision-making. [cite_start]It automates the ingestion of atmospheric and marine pollution results into a **Common Operational Picture (COP)** database. 
+**COPTool_Utils** is a suite of ETL (Extract, Transform, Load) tools designed to bridge the gap between hazard modeling and operational decision-making. It automates the ingestion of atmospheric and marine pollution results into a **Common Operational Picture (COP)** database. 
 
 ---
 
 ## 🇪🇺 Project Context: MANIFESTS-Genius
 
 This software is developed under the framework of the **MANIFESTS-Genius** project:
-> [cite_start]*From Gases and Evaporators risk assessmeNt towards an Integrated management of sea and land pollUtion incidentS.* 
+*From Gases and Evaporators risk assessmeNt towards an Integrated management of sea and land pollUtion incidentS.* 
 
-[cite_start]**Acknowledgment:** The work described in this report was supported by the **Directorate-General for European Civil Protection and Humanitarian Aid Operations (DG-ECHO)** of the European Union through the Grant Agreement number **101140390 - MANIFESTS Genius – UCPM-2023-KAPP** corresponding to the Call objective “Knowledge for Action in Prevention and Preparedness”. 
+**Acknowledgment:** The work described in this report was supported by the **Directorate-General for European Civil Protection and Humanitarian Aid Operations (DG-ECHO)** of the European Union through the Grant Agreement number **101140390 - MANIFESTS Genius – UCPM-2023-KAPP** corresponding to the Call objective “Knowledge for Action in Prevention and Preparedness”. 
 
-[cite_start]**Partners:** Developed in cooperation with **INTECMAR** and **IST**, coordinated by **Cedre**. 
+**Partners:** Developed in cooperation with **INTECMAR** and **IST**, coordinated by **Cedre**. 
 
 ---
 
@@ -20,13 +20,13 @@ This software is developed under the framework of the **MANIFESTS-Genius** proje
 The suite currently supports two main modeling ingestion workflows:
 
 ### 1. ALOHA2COP
-* **Extraction:** Parses KML files from NOAA's ALOHA model. [cite: 3, 10]
-* [cite_start]**Transformation:** Identifies threat levels (AEGL, PAC, LEL, IDLH) and converts coordinates into **Shapely** geometries. 
+* **Extraction:** Parses KML files from NOAA's ALOHA model. 
+* **Transformation:** Identifies threat levels (AEGL, PAC, LEL, IDLH) and converts coordinates into **Shapely** geometries. 
 
 ### 2. MOHID2COP
-* [cite_start]**Extraction:** Reads Lagrangian outputs from MOHID in **HDF5** or **NetCDF** formats. [cite: 5, 8, 9]
+* **Extraction:** Reads Lagrangian outputs from MOHID in **HDF5** or **NetCDF** formats. 
 * **Transformation:** Uses the **Marching Squares algorithm** to extract isolines from concentration fields and generates WKT (Well-Known Text) polygons. 
-* [cite_start]**Loading:** Ingests the resulting spatial data into a PostgreSQL/PostGIS database. [cite: 5]
+* **Loading:** Ingests the resulting spatial data into a PostgreSQL/PostGIS database. 
 
 ---
 
@@ -65,10 +65,10 @@ Based on the `COPTool_Utils` workspace:
 * **`requirements.txt`**: Global Python dependencies. 
 * **`LICENSE`**: Full text of the EUPL v1.2. 
 * **`config/`**: Shared database connection settings. 
-* [cite_start]**`common/`**: Internal readers (HDF5, NetCDF, JSON) and SQL utilities[cite: 7, 8, 9, 10]. 
+* **`common/`**: Internal readers (HDF5, NetCDF, JSON) and SQL utilities. 
 * **`tools/`**:
-    * [cite_start]**`aloha2cop/`**: Scripts for ALOHA KML ingestion[cite: 1]. 
-    * [cite_start]**`mohid2cop/`**: Scripts for MOHID HDF5/NetCDF ingestion. 
+    * **`aloha2cop/`**: Scripts for ALOHA KML ingestion. 
+    * **`mohid2cop/`**: Scripts for MOHID HDF5/NetCDF ingestion. 
 
 ---
 
@@ -82,7 +82,7 @@ The content of this document represents the views of the author only and is his/
 
 ---
 
-[cite_start]**Author:** Pedro Montero / INTECMAR [cite: 1, 3]
-[cite_start]**Version:** 1.1.0 [cite: 1]
+**Author:** Pedro Montero / INTECMAR 
+**Version:** 1.1.0 
 **Date:** 2026-02-16
 
