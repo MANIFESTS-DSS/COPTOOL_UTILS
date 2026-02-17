@@ -86,3 +86,7 @@ The content of this document represents the views of the author only and is his/
 **Version:** 1.1.0 
 **Date:** 2026-02-16
 
+---
+
+![Alt text](UEpequeno.png)
+
