@@ -7,7 +7,7 @@
 ## 🇪🇺 Project Context: MANIFESTS-Genius
 
 This software is developed under the framework of the **MANIFESTS-Genius** project:
-*From Gases and Evaporators risk assessmeNt towards an Integrated management of sea and land pollUtion incidentS.* 
+> *From Gases and Evaporators risk assessmeNt towards an Integrated management of sea and land pollUtion incidentS.* 
 
 **Acknowledgment:** The work described in this report was supported by the **Directorate-General for European Civil Protection and Humanitarian Aid Operations (DG-ECHO)** of the European Union through the Grant Agreement number **101140390 - MANIFESTS Genius – UCPM-2023-KAPP** corresponding to the Call objective “Knowledge for Action in Prevention and Preparedness”. 
 
