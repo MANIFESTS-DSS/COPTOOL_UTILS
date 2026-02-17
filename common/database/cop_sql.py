@@ -245,7 +245,7 @@ class CopQuery:
 
 def main():
 
-    aloha = AlohaQuery()
+    aloha = CopQuery()
     aloha.connect()
     aloha.set_id_model("ALOHA")
     aloha.set_id_campaign('MANIFESTS Example 1')

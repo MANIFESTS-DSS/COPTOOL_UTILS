@@ -1,0 +1,126 @@
+{
+"type":"SURPOL",
+"version":1,
+"identification":
+    {
+        "yearOfCreation":2024,
+        "numberInYear":18,
+        "operativeType":"POL"
+    },
+"crossCoordonnateurId":"AJ_CORSE",
+"pollutions":
+    [
+        {
+        "uuid":"1ac460b4-12d4-4686-bb64-0361365fa7f4",
+        "gdh":"2024-03-12T16:46:44.603Z",
+        "polluant":
+            {"typePolluant":"POL_HYDRO",
+            "forme":"TRAINEE",
+            "isRectangle":true,
+            "longueur":926.0,
+            "superficiePollution":0.0,
+            "tauxCouverture":100.0,
+            "commentaires":"PAS DE PHOTOS - DESCRIPTION PILOTE : TRAINEE DE 500/800 M DE COULEUR CLAIRE ",
+            "hasViscosite":false,
+            "hasNavireConnecte":false,
+            "erreur":"Calcul BONN impossible : saisir un taux de couverture et une surface"
+            },
+        "positions":
+            [
+                {"uuid":"1a85f212-6fbe-44ec-b1e1-7d409efa4d8b",
+                "gdh":"2024-03-12T16:53:42.368Z",
+                "location":
+                    {"latitudeDD":43.067667,
+                    "longitudeDD":8.357167,
+                    "azimut":316.0,
+                    "reference":"SEMAPHORE ILE ROUSSE ",
+                    "distance":36.5,
+                    "observation":"ZEE NORD OUEST CORSE ",
+                    "empty":false
+                    },
+                "source":"MAN",
+                "empty":false
+                }
+            ],
+        "source":"AERONEF",
+        "recueil":"OBSERVATION",
+        "detectionColor":"RED",
+        "probability":"A",
+        "autorite":"AVIATION_CIVILE"
+        }
+    ],
+    "messages":
+    [
+        {
+            "numeroOrdre":"UN",
+            "selectedMailList":"POLINF CORSE  <Communs POLINF>,SITREP SECMAR <Communs SITREP>",
+            "availableMailList":"SITREP SECMAR <Communs SITREP>,POLINF CORSE  <Communs POLINF>",
+            "type":"UNIQUE",
+            "locale":"FR",
+            "isValidate":true,
+            "isSent":true,
+            "dateTransmission":"2024-03-14T07:36:21.959Z",
+            "reportType":"SSN_FR",
+            "priorityLevel":"URGENCY",
+            "isWarn":false,
+            "isInf":false,
+            "isFac":false,
+            "dateTimeWarn":"12 mars24 16:44\r\n    ",
+            "dateTimeInf":"12 mars24 16:44",
+            "dateTimeFac":"12 mars24 16:44\r\n    ",
+            "position":"ZEE\r\n- Position :\r\n43°04.06'N / 008°21.43'E\r\nAzimut/Distance : 316° / SEMAPHORE ILE ROUSSE  / 36,5 NQ\r\n    ",
+            "outflow":"Hydrocarbures",
+            "position_Extent":"OBSERVATION INITIALE\r\n- ZEE NORD OUEST CORSE \r\n- Position : 43°04.06'N / 008°21.43'E\r\n- Azimut/Distance : 316° / SEMAPHORE ILE ROUSSE  / 36,5 NQ\r\n- ETENDUE DE LA POLLUTION : 800 M DE LONG","carac":"OBSERVATION INITIALE\r\n-TYPE INDETERMINE\r\n- Forme/Aspect : Traînée / FINE","source":"NEANT","wind":"Secteur de Vent : WSW / Force : 3 : Petite brise - 7 à 10 nds","current":"Direction : 006° / Vitesse : 0,61nds","seaState":"Etat de mer : 4 : Agitée - 1.25 à 2.5 m / Température de la mer : 14°C\r\nVisibilité : 12MN - Nébulosité 1/8 - Température de l'air : 13°C",
+            "drift":"NORD EST ",
+            "forecast":"NEANT",
+            "observer":"Observation Aéronef CIVIL",
+            "actionTaken":"ABSENCE DE MOYEN DE RELOCALISATION D'OPPORTUNITE\r\nPOL CLASSIFIEE EN INDETERMINEE",
+            "photo":"NEANT",
+            "organisations":"COM / COD / CORGMAR  / CEDRE / DMLC ",
+            "spareInf":"NEANT",
+            "acknowledgeWarn":"Non requis",
+            "acknowledgeInf":"Requis"
+        }
+    ],
+    "bulletinsMeteo":
+    [
+        {
+            "uuid":"a0953eef-6ee3-4faa-8a13-c4350ccafbe7",
+            "isPinned":true,
+            "position":{"type":"Point","coordinates":[0.0,0.0]},
+            "gdh":"2024-03-12T17:14:19.644Z",
+            "source":"METEO-France",
+            "type":"PREVISIONS",
+            "gdhObs":"2024-03-12T12:00:00Z",
+            "visibilite":22224.0,
+            "nebulosite":"NEBU_1",
+            "secteurVent":"WSW",
+            "forceVent":"FORCE_3",
+            "directionVent":4.1639033273000345,
+            "vitesseVent":4.630010700469175,
+            "directionCourant":0.09953838656764699,
+            "vitesseCourant":0.3132398691673222,
+            "etatMer":"ETAT_MER_4",
+            "tempMer":287.186767578125,
+            "tempAir":286.42578125
+        }
+    ],
+        
+    "typeRejet":"INCONNU",
+    "toyenAlertePoll":"OBSERVATION_TEMOIN",
+    "classificationPoll":"INDETERMINE",
+    "quiAlertePoll":"AERONEF",
+    "tgi":false,
+    "navireConnecte":false,
+    "zoneGeoPoll":"ZEE",
+    "referencePosition":
+        {
+            "coordinates":[8.357114,43.067698],
+            "latitude":43.067698,
+            "longitude":8.357114
+        },
+    "pollutionPrincipal":"1ac410b4-12d4-4686-bb64-0368365fa7f4",
+    "chrono":"AJ-3026-POL-2011",
+    "chronoLite":"AJ-3026-2011",
+    "id":"61f086f414118d0603932270"
+}

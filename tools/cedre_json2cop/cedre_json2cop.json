@@ -1,0 +1,5 @@
+{
+  "file_in": "../../data/samples/cedre_json.json",
+  "source_type": "CEDRE_POLREP",
+  "description": "Ingesta de datos de incidentes y contaminación desde JSON de Cedre"
+}
