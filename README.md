@@ -1,4 +1,4 @@
-## COPTool_Utils: ALOHA2COP & MOHID2COP
+## COPTool_Utils: ALOHA2COP, MOHID2COP & CEDRE_JSON2COP
 
 **COPTool_Utils** is a suite of ETL (Extract, Transform, Load) tools designed to bridge the gap between hazard modeling and operational decision-making. It automates the ingestion of atmospheric and marine pollution results into a **Common Operational Picture (COP)** database. 
 
@@ -28,6 +28,15 @@ The suite currently supports two main modeling ingestion workflows:
 * **Transformation:** Uses the **Marching Squares algorithm** to extract isolines from concentration fields and generates WKT (Well-Known Text) polygons. 
 * **Loading:** Ingests the resulting spatial data into a PostgreSQL/PostGIS database. 
 
+### 3. CEDRE2COP
+* **Extraction:** Parses **JSON** incident reports (POLREP format) provided by Cedre.
+* **Transformation:** Maps complex nested JSON structures (camelCase) to database entities, handles UUID conversion, and processes localized fields.
+* **Loading:** Ingests structured data into the **`CEDRE_POLREP`** PostgreSQL schema, preserving relationships between:
+    * Incidents
+    * Pollutions & Positions
+    * Messages (SITREP/POLINF)
+    * Meteo Bulletins
+
 ---
 
 ## 🚀 Installation & Setup
@@ -56,6 +65,11 @@ Each tool is controlled via its own JSON configuration:
     * `initial date`: Simulation start time in `YYYY-MM-DD HH:MM:SS` format.
   
 * **MOHID:** `tools/mohid2cop/mohid2cop.json`
+* **CEDRE:** `tools/cedre_json2cop/cedre_json2cop.json`
+
+* **Key Fields:** `file_in: Path to the input JSON file (e.g., AJ_2024_POL_0017_1.json).`
+
+* **source_type:**  `Identifier for the data source (e.g., "CEDRE_POLREP").`
 
 ---
 
@@ -68,7 +82,8 @@ Based on the `COPTool_Utils` workspace:
 * **`common/`**: Internal readers (HDF5, NetCDF, JSON) and SQL utilities. 
 * **`tools/`**:
     * **`aloha2cop/`**: Scripts for ALOHA KML ingestion. 
-    * **`mohid2cop/`**: Scripts for MOHID HDF5/NetCDF ingestion. 
+    * **`mohid2cop/`**: Scripts for MOHID HDF5/NetCDF ingestion.
+    * **`cedre_json2cop/`**: Scripts for CEDRE JSON incident ingestion.
 
 ---
 
