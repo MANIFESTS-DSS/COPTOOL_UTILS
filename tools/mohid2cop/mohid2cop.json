@@ -1,0 +1,20 @@
+{
+	"file_in": "../../data/samples/Lagrangian_sample_air.hdf5",
+	"campaign": {
+		"name": "SAMPLE",
+		"description": "Sample of MOHID air output"
+	},
+	"model": "MOHID",
+	"simulation": {
+		"name": "SAMPLE_AEGL_01",
+		"description": "Leack 2Tm de amonium,83% NH3, flujo: instantaneous"
+	},
+	"initial date": "2025-10-29 09:00:00",
+    "levels": {
+		"type": "AEGL",
+		"level": [{"value": 20.896,  "name": "AEGL-1", "description":  "Yellow Threat Zone 30 ppm = AEGL-1 (60 min)"},
+			      {"value": 111.44, "name": "AEGL-2", "description":  "Orange Threat Zone 160 ppm = AEGL-2 (60 min)"},
+			      {"value": 766.180,  "name": "AEGL-3", "description":  "Red Threat Zone 1100 ppm = AEGL-3 (60 min)"}
+		]
+	}
+}
