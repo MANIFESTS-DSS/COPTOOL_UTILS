@@ -41,7 +41,7 @@ Date: 2026-02-16
 from datetime import datetime
 from common.readers.inout import read_input
 from aloha_reader import Aloha
-from aloha_sql import AlohaQuery
+from common.database.cop_sql import CopQuery
 
 
 def read_aloha(file_in):
@@ -66,7 +66,7 @@ def main(inputs):
        print(f'     DESCRIPTION: \n     {threat_zone.description}')
        print(f'     LEVEL:     {threat_zone.level}\n\n')
 
-    aloha_query = AlohaQuery()
+    aloha_query = CopQuery()
     aloha_query.connect()
 
     campaign_name = campaign['name']
