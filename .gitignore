@@ -6,7 +6,9 @@ __pycache__/
 .DS_Store
 
 # Ignorar el archivo de configuración de base de datos específico
-config/db_aloha2cop.json
+config/db.json
 
 # Ignorar el directorio de datos aloha2cop
 data/aloha2cop/
+*.hdf5
+
